@@ -4,8 +4,8 @@ set -e
 
 set_dir_vars()
 {
-	REPO="$(dirname "$(realpath "${0}")")"
-	DESTDIR="${HOME?}"
+	readonly REPO="$(dirname "$(realpath "${0}")")"
+	readonly DESTDIR="${HOME?}"
 }
 
 main()
