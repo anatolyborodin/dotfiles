@@ -2,10 +2,24 @@
 
 set -e
 
-set_dir_vars()
+set_globals()
 {
 	readonly REPO="$(dirname "$(realpath "${0}")")"
 	readonly DESTDIR="${HOME?}"
+	case $(uname) in
+		Linux)
+			sed_inplace()
+			{
+				sed -i "${@}"
+			}
+			;;
+		*)
+			sed_inplace()
+			{
+				sed -i '' "${@}"
+			}
+			;;
+	esac
 }
 
 install_file()
@@ -21,7 +35,7 @@ install_file()
 
 main()
 {
-	set_dir_vars
+	set_globals
 	install_file "git/config" ".config/git/config"
 }
 
