@@ -19,6 +19,12 @@ Clone the repository (you can use a directory different from `~/dotfiles`):
 git clone --recursive https://github.com/anatolyborodin/dotfiles.git ~/dotfiles
 ```
 
+or
+
+```sh
+git clone --recursive git@github.com:anatolyborodin/dotfiles.git ~/dotfiles
+```
+
 Install the files:
 
 ```sh
