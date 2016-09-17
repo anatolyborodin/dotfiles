@@ -1,0 +1,4 @@
+[submodule "git-identity"]
+	path = git/git-identity
+	url = https://github.com/madx/git-identity.git
+	branch = master

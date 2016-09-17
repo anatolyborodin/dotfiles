@@ -22,6 +22,12 @@ set_globals()
 	esac
 }
 
+fix_bash_shebang()
+{
+	echo "fix bash shebang in ${@}"
+	sed_inplace 's|#!/bin/bash|#!/usr/bin/env bash|g' "${@}"
+}
+
 install_file()
 {
 	local SRC DST
@@ -31,12 +37,22 @@ install_file()
 	mkdir -p "$(dirname "${DST}")"
 	rm -rf "${DST}"
 	cp "${SRC}" "${DST}"
+	if [ "${3}" != "" ]
+	then
+		eval "${3?}" "${DST}"
+	fi
 }
 
 main()
 {
 	set_globals
-	install_file "git/config" ".config/git/config"
+	install_file \
+		"git/config" \
+		".config/git/config"
+	install_file \
+		"git/git-identity/git-identity" \
+		"bin/git-identity" \
+		fix_bash_shebang
 }
 
 main

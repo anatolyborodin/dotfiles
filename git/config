@@ -30,6 +30,9 @@
 	suffix = .diff
 [grep]
 	fallbackToNoIndex = true
+[identity "public"]
+	email = anatoly.borodin@gmail.com
+	name = Anatoly Borodin
 [log]
 	date = local
 	decorate = auto
