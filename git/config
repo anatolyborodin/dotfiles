@@ -1,0 +1,81 @@
+[alias]
+	blog = log --pretty=blog --graph
+	dog = log --decorate --oneline --graph
+	dt = difftool
+	mt = mergetool
+	sm = submodule
+	st = status
+[am]
+	threeWay = true
+[branch]
+	autoSetupRebase = always
+[clean]
+	requireForce = false
+[credential]
+	helper = cache --timeout=7200
+[diff]
+	compactionHeuristic = true
+	ignoreSubmodules = dirty
+	noprefix = true
+	renameLimit = 64536
+	renames = copies
+	submodule = log
+	tool = vimdiff
+[difftool]
+	prompt = false
+[fetch]
+	prune = true
+	recurseSubmodules = true
+[format]
+	suffix = .diff
+[grep]
+	fallbackToNoIndex = true
+[identity "public"]
+	email = anatoly.borodin@gmail.com
+	name = Anatoly Borodin
+[log]
+	date = local
+	decorate = auto
+	follow = true
+	mailmap = true
+[merge]
+	branchdesc = true
+	conflictStyle = diff3
+	defaultToUpstream = true
+	ff = false
+	log = true
+	tool = vimdiff
+[mergetool]
+	keepBackup = false
+	prompt = false
+	writeToTemp = true
+[pager]
+	branch = true
+	status = true
+	tag = true
+[pretty]
+	blog = %C(auto)%h%d %C(green)%aN%C(bold white):%C(reset) %s %C(bold yellow)//%C(reset) %C(cyan)%ar
+[pull]
+	ff = only
+	rebase = preserve
+[push]
+	recurseSubmodules = check
+[rebase]
+	autoSquash = true
+	autoStash = true
+	stat = true
+[receive]
+	denyCurrentBranch = updateInstead
+[stash]
+	showPatch = true
+[status]
+	showUntrackedFiles = all
+	submoduleSummary = true
+[svn]
+	rmdir = true
+[transfer]
+	fsckObjects = true
+[user]
+	email = anatoly.borodin@gmail.com
+	name = Anatoly Borodin
+	useConfigOnly = true

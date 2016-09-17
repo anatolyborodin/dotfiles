@@ -11,6 +11,20 @@ The target platforms are FreeBSD and Linux (Ubuntu).
 by [this page][dotfiles-page] ([@dotfiles][github-dotfiles])
 and [this blog post][dotfiles-post] ([@holman][github-holman]).*
 
+## Installation
+
+Clone the repository (you can use a directory different from `~/dotfiles`):
+
+```sh
+git clone --recursive https://github.com/anatolyborodin/dotfiles.git ~/dotfiles
+```
+
+Install the files:
+
+```sh
+~/dotfiles/install.sh
+```
+
 
 
 
