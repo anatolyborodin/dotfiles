@@ -24,7 +24,7 @@ set_globals()
 
 fix_bash_shebang()
 {
-	echo "fix bash shebang in ${@}"
+	echo "Fix bash shebang in "${@}""
 	sed_inplace 's|#!/bin/bash|#!/usr/bin/env bash|g' "${@}"
 }
 
@@ -33,7 +33,7 @@ install_file()
 	local SRC DST
 	SRC="${REPO?}/${1?}"
 	DST="${DESTDIR?}/${2?}"
-	echo "${SRC} -> ${DST}"
+	echo "Copy "${SRC}" to "${DST}""
 	mkdir -p "$(dirname "${DST}")"
 	rm -rf "${DST}"
 	cp "${SRC}" "${DST}"
@@ -59,6 +59,7 @@ main()
 	install_file \
 		"mc/panels.ini" \
 		".config/mc/panels.ini"
+	echo 'Success!'
 }
 
 main
