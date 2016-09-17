@@ -53,6 +53,12 @@ main()
 		"git/git-identity/git-identity" \
 		"bin/git-identity" \
 		fix_bash_shebang
+	install_file \
+		"mc/ini" \
+		".config/mc/ini"
+	install_file \
+		"mc/panels.ini" \
+		".config/mc/panels.ini"
 }
 
 main
