@@ -49,16 +49,13 @@
 	keepBackup = false
 	prompt = false
 	writeToTemp = true
-[pager]
-	branch = true
-	status = true
-	tag = true
 [pretty]
 	blog = %C(auto)%h%d %C(green)%aN%C(bold white):%C(reset) %s %C(bold yellow)//%C(reset) %C(cyan)%ar
 [pull]
 	ff = only
 	rebase = preserve
 [push]
+	default = current
 	recurseSubmodules = check
 [rebase]
 	autoSquash = true
