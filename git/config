@@ -55,6 +55,7 @@
 	ff = only
 	rebase = preserve
 [push]
+	default = current
 	recurseSubmodules = check
 [rebase]
 	autoSquash = true
