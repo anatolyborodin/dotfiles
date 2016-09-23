@@ -54,6 +54,9 @@ main()
 		"bin/git-identity" \
 		fix_bash_shebang
 	install_file \
+		"git/git-when-merged/bin/git-when-merged" \
+		"bin/git-when-merged"
+	install_file \
 		"mc/ini" \
 		".config/mc/ini"
 	install_file \
