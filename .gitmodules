@@ -2,3 +2,7 @@
 	path = git/git-identity
 	url = https://github.com/madx/git-identity.git
 	branch = master
+[submodule "git-when-merged"]
+	path = git/git-when-merged
+	url = https://github.com/mhagger/git-when-merged.git
+	branch = master
