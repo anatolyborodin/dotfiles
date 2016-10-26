@@ -8,7 +8,7 @@
 [am]
 	threeWay = true
 [branch]
-	autoSetupRebase = always
+	autoSetupRebase = never
 [clean]
 	requireForce = false
 [credential]
