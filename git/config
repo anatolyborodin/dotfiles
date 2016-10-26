@@ -11,6 +11,8 @@
 	autoSetupRebase = never
 [clean]
 	requireForce = false
+[core]
+	abbrev = 12
 [credential]
 	helper = cache --timeout=7200
 [diff]
