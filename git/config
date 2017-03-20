@@ -7,7 +7,7 @@
 	fa = fetch --all
 	mt = mergetool
 	sm = submodule
-	smuf = submodule update --force
+	smuf = submodule update --init --force
 	st = status
 [am]
 	threeWay = true
