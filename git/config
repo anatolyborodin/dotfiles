@@ -1,5 +1,6 @@
 [alias]
 	blog = log --pretty=blog --graph
+	clog = log --pretty=clog --graph
 	dog = log --decorate --oneline --graph
 	dt = difftool
 	mt = mergetool
@@ -53,6 +54,7 @@
 	writeToTemp = true
 [pretty]
 	blog = %C(auto)%h%d %C(green)%aN%C(bold white):%C(reset) %s %C(bold yellow)//%C(reset) %C(cyan)%ar
+	clog = %C(auto)%h%d %C(green)%cN%C(bold white):%C(reset) %s %C(bold yellow)//%C(reset) %C(cyan)%cr
 [pull]
 	ff = only
 	rebase = preserve
