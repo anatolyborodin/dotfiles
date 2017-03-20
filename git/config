@@ -1,10 +1,13 @@
 [alias]
 	blog = log --pretty=blog --graph
 	clog = log --pretty=clog --graph
+	cv = cherry -v
 	dog = log --decorate --oneline --graph
 	dt = difftool
+	fa = fetch --all
 	mt = mergetool
 	sm = submodule
+	smuf = submodule update --force
 	st = status
 [am]
 	threeWay = true
