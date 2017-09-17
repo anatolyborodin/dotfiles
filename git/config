@@ -6,7 +6,7 @@
 	dt = difftool
 	fa = fetch --all
 	mt = mergetool
-	obj = count-objects
+	obj = count-objects --verbose --human-readable
 	sm = submodule
 	smuf = submodule update --init --force
 	st = status
